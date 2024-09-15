@@ -1,42 +1,73 @@
 <!doctype html>
-<html class="h-full w-full" lang="fr">
+<html class="" lang="fr">
 <head>
   <meta charset="utf-8">
   <title>ASTA</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/src/styles.css">
   <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
   <link href="assets/fontawesome/css/all.css" rel="stylesheet">
 
 </head>
-<body class="h-full w-full">
-        <header class="bg-gray-600 gap-2">
-                <nav class="flex justify-end">
-                    <ul class="flex flex-row">
-                        <li class="text-white px-3"><a href="#home">Home</a></li>
-                        <li class="text-white px-3"><a href="#about">About us</a></li>
-                        <li class="text-white px-3"><a href="#ref">Nos références</a></li>
-                        <li class="text-white px-3"><a href="#projet">Projets d'actualités</a></li>
-                        <li class="text-white px-3"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+<body >
+    <div id="page">
+                <header id="header" class="col">
+                    <div class="h-tier"></div>
+                    <div class="h-tier">
+                        <nav id="navbar">
+                            <ul class="row">
+                                <li class=""><a href="#home">Home</a></li>
+                                <li class="text-white px-3"><a href="#about">About us</a></li>
+                                <li class="text-white px-3"><a href="#ref">Nos références</a></li>
+                                <li class="text-white px-3"><a href="#projet">Projets d'actualités</a></li>
+                                <li class="text-white px-3"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav></div>
+
+                    <div class="h-tier"></div>
+
         </header>
-        <main class="h-full">
-            <!-- home-->
-            <section id="home" class="w-full h-full bg-[url('assets/img/image2.jpg')] bg-cover">
-                <div></div>
-                <h2 class="text-center text-gray-600 text-4xl">Welcome to Asta!</h2>
-                <h2  class="text-center text-gray-600 text-4xl">Meilleur solution pour synthèse technique et architecturale </h2>
-            </section>
-            
-            <section id="about">Abou as</section>
-            <section id="ref">Nos Références</section>
-            <section id="projet">Nos projets</section>
-            <section id="contact">Contact</section>
+        <main id="main">
+                <section id="home" class="h-5eme">
+                        <h1 class="text-center text-gray-600 m-0">Bienvenue chez Asta</h1>
+                        <h2  class="text-center text-gray-600 text-3xl">Atelier d'architecture et de synthèse</h2>
+                    </section>
+
+
+                
+                <section id="about" class="h-5eme">
+                    <div class="flex flex-col">
+                        <div><h1 class="text-center text-gray-600">About as</h1></div>
+                        <div>
+                            <div class="flex flex-col text-center">
+                                <p>ASTA est une jeune entreprise crée par l'Architecte Hamdi SGHAIER en 2023</p>
+                                <p>Meilleur solution pour synthèse technique et architecturale </p>
+                            </div>
+                            <div >
+                                <!-- <img src="assets/img/hamdi.jpg" alt="Photo de Hamdi"> -->
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    
+                    
+                    
+
+                    
+                </section>
+                <section id="ref" class="h-5eme">
+                    <h1 class="text-center text-gray-600">Nos Références</h1></section>
+                <section id="projet"  class="h-5eme">
+                    <h1 class="text-center">Nos projets</h1></section>
+                <section id="contact"  class="h-5eme">
+                    <h1 class="text-center text-gray-600">Contact</h1></section>
+
         
         </main>
 
-        <footer class="h-1/10 bg-fuchsia-500">
+        <footer id="footer">
             <p class="text-center">&copy; 2023 - Asta</p>
         </footer>
+    </div>
+
 </body>
 </html>
