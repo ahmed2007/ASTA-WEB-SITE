@@ -49,14 +49,14 @@ html, body {
 }
 
 #home {
-    background-image: url('/public/assets/img/image2.jpg');
+    background-image: url('assets/img/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 60%;
 }
 
 #about {
-    background-image: url('/public/assets/img/image1.avif');
+    background-image: url('assets/img/image1.avif');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 60%;
