@@ -1,81 +1,260 @@
-<!doctype html>
-<html class="" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>ASTA</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTA - Atelier d'Architecture et de Synthèse</title>
+    <meta name="description" content="ASTA - Atelier d'Architecture et de Synthèse. Création d'espaces innovants et design architectural moderne. Contactez-nous pour vos projets.">
+    <meta name="keywords" content="architecture, design, synthèse, atelier, construction, rénovation, projet architectural">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-    <div id="page">
-                <header id="header" class="col">
-                    <div class="h-tier"></div>
-                    <div class="h-tier">
-                        <nav id="navbar">
-                            <ul class="row">
-                                <li class=""><a href="#home">Home</a></li>
-                                <li class="text-white px-3"><a href="#about">About us</a></li>
-                                <li class="text-white px-3"><a href="#ref">Nos références</a></li>
-                                <li class="text-white px-3"><a href="#projet">Projets d'actualités</a></li>
-                                <li class="text-white px-3"><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav></div>
-
-                    <div class="h-tier"></div>
-
-        </header>
-        <main id="main">
-                <section id="home" class="section-page">
-                        <h1 class="text-center text-gray-600">Bienvenue chez Asta</h1>
-                        <h2  class="text-center text-gray-600 text-3xl">Atelier d'architecture et de synthèse</h2>
-                    </section>
-
-
-                
-                <section id="about" class="section-page">
-                    <div class="flex flex-col">
-                        <div><h1 class="text-center text-gray-600">About as</h1></div>
-                        <div>
-                            <div class="flex flex-col text-center">
-                                <p>ASTA est une jeune entreprise crée par l'Architecte Hamdi SGHAIER en 2023</p>
-                                <p>Meilleur solution pour synthèse technique et architecturale </p>
-                            </div>
-                            <div >
-                                <!-- <img src="assets/img/hamdi.jpg" alt="Photo de Hamdi"> -->
-                            </div>
-                        </div>
-                        <div></div>
-                    </div>
-                    
-                    
-                    
-
-                    
-                </section>
-                <section id="ref" class="section-page">
-                    <h1 class="text-center text-gray-600">Nos Références</h1></section>
-                <section id="projet"  class="section-page">
-                    <h1 class="text-center text-gray-600">Nos projets</h1></section>
-                <section id="contact"  class="section-page">
-                    <h1 class="text-center text-gray-600">Contact</h1>
-                <div class="text-center">
-                    <h2 >Hamdi SGHAIER</h2>
-                    <h2>Tel: 00.00.00.00.00</h2>
-                    <h2>email: hamdi_sghaier@hotmai.com</h2>
-                    <h2>Linkedin: https://www.linkedin.com/in/hamdi-sghaier-7430aa33/</h2>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a class="flex flex-row" href="index.html" class="text-2xl font-bold text-gray-800">
+                        <img class="size-16" src="img/logo.jpeg">
+                        <span class="p-5 text-blue-600">ASTA</span>
+                    </a>
                 </div>
 
-            </section>
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Accueil</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Projets</a>
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-600 font-medium transition">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+                </div>
 
-        
-        </main>
+                <!-- Menu Burger -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
 
-        <footer id="footer">
-            <p class="text-center">&copy; 2023 - Asta</p>
-        </footer>
-    </div>
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Accueil</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Projets</a>
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Atelier d'Architecture<br>
+                <span class="text-blue-400">et de Synthèse</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Créons ensemble des espaces qui inspirent et transforment votre vision en réalité architecturale
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="projets.html" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+                    Découvrir nos projets
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition">
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="py-20 bg-gray-50 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    De la conception à la réalisation, nous vous accompagnons dans tous vos projets architecturaux
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Conception Architecturale</h3>
+                    <p class="text-gray-600">Design innovant et personnalisé pour créer des espaces uniques qui reflètent votre vision.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture Résidentielle</h3>
+                    <p class="text-gray-600">Maisons individuelles, rénovations et extensions pour optimiser votre espace de vie.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture Commerciale</h3>
+                    <p class="text-gray-600">Bureaux, commerces et espaces professionnels adaptés à vos besoins d'entreprise.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="services.html" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+                    Voir tous nos services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Preview Section -->
+    <section class="py-20 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos Réalisations</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Découvrez quelques-uns de nos projets qui illustrent notre expertise et notre créativité
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Villa Moderne" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="pt-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Villa Moderne</h3>
+                        <p class="text-gray-600">Architecture contemporaine avec piscine et jardin paysager</p>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Loft Urbain" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="pt-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Loft Urbain</h3>
+                        <p class="text-gray-600">Rénovation d'un ancien entrepôt en espace de vie moderne</p>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Bureaux Design" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="pt-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Bureaux Design</h3>
+                        <p class="text-gray-600">Espaces de travail collaboratifs et lumineux</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="projets.html" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+                    Voir tous nos projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Prêt à concrétiser votre projet ?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Discutons de vos idées et transformons-les en réalité architecturale exceptionnelle
+            </p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg">
+                Contactez-nous
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-blue-400">ASTA</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Atelier d'Architecture et de Synthèse - Créateur d'espaces innovants et durables.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Conception Architecturale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Résidentielle</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Commerciale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Modélisation 3D</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+                        <li><a href="apropos.html" class="hover:text-blue-400 transition">À propos</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>123 Avenue de l'Architecture</p>
+                        <p>75001 Paris, France</p>
+                        <p>+33 1 23 45 67 89</p>
+                        <p>contact@asta-architecture.fr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 ASTA - Atelier d'Architecture et de Synthèse. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

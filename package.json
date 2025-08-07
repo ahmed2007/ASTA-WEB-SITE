@@ -1,0 +1,24 @@
+{
+  "name": "asta-web-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i style.css -o output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmed2007/ASTA-WEB-SITE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmed2007/ASTA-WEB-SITE/issues"
+  },
+  "homepage": "https://github.com/ahmed2007/ASTA-WEB-SITE#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - ASTA Architecture</title>
+    <meta name="description" content="Découvrez l'histoire d'ASTA, notre équipe d'architectes passionnés et notre vision de l'architecture moderne et durable.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">
+                        <span class="text-blue-600">ASTA</span>
+                    </a>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Accueil</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Projets</a>
+                    <a href="apropos.html" class="text-blue-600 font-semibold">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+                </div>
+
+                <!-- Menu Burger -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Accueil</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Projets</a>
+                    <a href="apropos.html" class="text-blue-600 font-semibold py-2 border-b">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 fade-in">
+                À Propos d'ASTA
+            </h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto fade-in">
+                Découvrez notre histoire, notre équipe et notre vision de l'architecture
+            </p>
+        </div>
+    </section>
+
+    <!-- Notre Histoire -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Notre Histoire</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Fondé en 2015, ASTA (Atelier d'Architecture et de Synthèse) est né de la passion commune de trois architectes pour l'innovation et l'excellence dans la conception d'espaces.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Notre approche unique combine créativité, durabilité et fonctionnalité pour créer des espaces qui non seulement impressionnent visuellement, mais améliorent aussi la qualité de vie de leurs occupants.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Aujourd'hui, nous sommes fiers d'avoir réalisé plus de 150 projets et d'avoir établi une réputation solide dans l'industrie architecturale française.
+                    </p>
+                </div>
+                <div class="fade-in">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Bureau ASTA" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Équipe -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Notre Équipe</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Une équipe d'experts passionnés dédiée à l'excellence architecturale
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Pierre Martin" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pierre Martin</h3>
+                    <p class="text-blue-600 font-medium mb-4">Architecte Fondateur</p>
+                    <p class="text-gray-600 text-sm">
+                        15 ans d'expérience en architecture durable et design innovant. Diplômé de l'École des Beaux-Arts de Paris.
+                    </p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616c95de45c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Sophie Dubois" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sophie Dubois</h3>
+                    <p class="text-blue-600 font-medium mb-4">Architecte d'Intérieur</p>
+                    <p class="text-gray-600 text-sm">
+                        Spécialisée dans l'architecture d'intérieur et l'aménagement d'espaces. Experte en décoration moderne et fonctionnelle.
+                    </p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center fade-in">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Marc Lefebvre" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Marc Lefebvre</h3>
+                    <p class="text-blue-600 font-medium mb-4">Architecte Urbaniste</p>
+                    <p class="text-gray-600 text-sm">
+                        Expert en urbanisme et projets commerciaux. Passionné par l'intégration harmonieuse des bâtiments dans leur environnement.
+                    </p>
+                    <div class="flex justify-center space-x-3 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Valeurs -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nos Valeurs</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Les principes qui guident notre approche architecturale
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Innovation</h3>
+                    <p class="text-gray-600">
+                        Nous repoussons constamment les limites du design pour créer des solutions architecturales uniques et avant-gardistes.
+                    </p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Durabilité</h3>
+                    <p class="text-gray-600">
+                        Chaque projet intègre des principes de développement durable pour un impact environnemental minimal.
+                    </p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Collaboration</h3>
+                    <p class="text-gray-600">
+                        Nous travaillons en étroite collaboration avec nos clients pour comprendre et réaliser leur vision.
+                    </p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Excellence</h3>
+                    <p class="text-gray-600">
+                        Nous nous engageons à livrer des projets d'une qualité exceptionnelle dans les délais convenus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chiffres Clés -->
+    <section class="py-20 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Nos Réalisations en Chiffres</h2>
+                <p class="text-xl text-blue-100">
+                    Quelques statistiques qui témoignent de notre expertise
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 text-center text-white">
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">150+</div>
+                    <p class="text-blue-100">Projets Réalisés</p>
+                </div>
+
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">9</div>
+                    <p class="text-blue-100">Années d'Expérience</p>
+                </div>
+
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">95%</div>
+                    <p class="text-blue-100">Clients Satisfaits</p>
+                </div>
+
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl font-bold mb-2">25</div>
+                    <p class="text-blue-100">Récompenses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                Travaillons Ensemble
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Prêt à donner vie à votre projet architectural ? Contactez-nous pour une consultation gratuite.
+            </p>
+            <a href="contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-lg">
+                Contactez-nous
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-blue-400">ASTA</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Atelier d'Architecture et de Synthèse - Créateur d'espaces innovants et durables.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Conception Architecturale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Résidentielle</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Commerciale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Modélisation 3D</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+                        <li><a href="apropos.html" class="hover:text-blue-400 transition">À propos</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>123 Avenue de l'Architecture</p>
+                        <p>75001 Paris, France</p>
+                        <p>+33 1 23 45 67 89</p>
+                        <p>contact@asta-architecture.fr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 ASTA - Atelier d'Architecture et de Synthèse. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

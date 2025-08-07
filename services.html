@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ASTA Architecture</title>
+    <meta name="description" content="Découvrez nos services d'architecture : conception, résidentiel, commercial, modélisation 3D et architecture durable.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">
+                        <span class="text-blue-600">ASTA</span>
+                    </a>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Accueil</a>
+                    <a href="services.html" class="text-blue-600 font-semibold">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Projets</a>
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-600 font-medium transition">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+                </div>
+
+                <!-- Menu Burger -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Accueil</a>
+                    <a href="services.html" class="text-blue-600 font-semibold py-2 border-b">Services</a>
+                    <a href="projets.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">Projets</a>
+                    <a href="apropos.html" class="text-gray-700 hover:text-blue-600 font-medium py-2 border-b">À propos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 fade-in">
+                Nos Services
+            </h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto fade-in">
+                De la conception à la réalisation, nous vous accompagnons dans tous vos projets architecturaux
+            </p>
+        </div>
+    </section>
+
+    <!-- Services détaillés -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Conception Architecturale</h3>
+                    <p class="text-gray-600 mb-4">Design innovant et personnalisé pour créer des espaces uniques qui reflètent votre vision et vos besoins spécifiques.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Études de faisabilité</li>
+                        <li>• Plans architecturaux</li>
+                        <li>• Design d'intérieur</li>
+                        <li>• Consultation créative</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture Résidentielle</h3>
+                    <p class="text-gray-600 mb-4">Maisons individuelles, rénovations et extensions pour optimiser votre espace de vie et créer votre maison de rêve.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Maisons individuelles</li>
+                        <li>• Rénovations complètes</li>
+                        <li>• Extensions de maison</li>
+                        <li>• Aménagements extérieurs</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture Commerciale</h3>
+                    <p class="text-gray-600 mb-4">Bureaux, commerces et espaces professionnels adaptés à vos besoins d'entreprise et à votre image de marque.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Bureaux modernes</li>
+                        <li>• Espaces commerciaux</li>
+                        <li>• Restaurants et hôtels</li>
+                        <li>• Espaces de coworking</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Modélisation 3D</h3>
+                    <p class="text-gray-600 mb-4">Visualisation réaliste de vos projets avec des rendus 3D photorealistic pour mieux comprendre votre futur espace.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Rendus 3D photoréalistes</li>
+                        <li>• Visites virtuelles</li>
+                        <li>• Plans 3D interactifs</li>
+                        <li>• Animations architecturales</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Architecture Durable</h3>
+                    <p class="text-gray-600 mb-4">Solutions éco-responsables et durables pour minimiser l'impact environnemental et optimiser l'efficacité énergétique.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Bâtiments basse consommation</li>
+                        <li>• Matériaux éco-responsables</li>
+                        <li>• Énergies renouvelables</li>
+                        <li>• Certifications HQE/BBC</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition fade-in">
+                    <div class="text-blue-600 text-4xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Suivi de Chantier</h3>
+                    <p class="text-gray-600 mb-4">Accompagnement complet durant la phase de construction pour garantir la qualité et le respect des délais.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Direction de travaux</li>
+                        <li>• Coordination des corps de métiers</li>
+                        <li>• Contrôle qualité</li>
+                        <li>• Réception de chantier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Processus -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Notre Processus</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Une méthode éprouvée en 6 étapes pour mener votre projet à bien
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Consultation Initiale</h3>
+                    <p class="text-gray-600">Analyse de vos besoins, budget et contraintes pour définir ensemble la vision de votre projet.</p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Étude de Faisabilité</h3>
+                    <p class="text-gray-600">Analyse du terrain, réglementations urbaines et étude de faisabilité technique et financière.</p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Conception</h3>
+                    <p class="text-gray-600">Élaboration des plans, esquises et rendus 3D pour visualiser votre projet avant réalisation.</p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Dossier Administratif</h3>
+                    <p class="text-gray-600">Constitution et dépôt du permis de construire ou de la déclaration de travaux selon votre projet.</p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">5</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Suivi de Chantier</h3>
+                    <p class="text-gray-600">Direction des travaux, coordination des entreprises et contrôle qualité tout au long du chantier.</p>
+                </div>
+
+                <div class="text-center fade-in">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">6</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Livraison</h3>
+                    <p class="text-gray-600">Réception des travaux, vérifications finales et remise des clés de votre projet réalisé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="py-20 bg-blue-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Prêt à Concrétiser Votre Projet ?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons transformer votre vision en réalité.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Demander un Devis
+                </a>
+                <a href="tel:+33123456789" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    Appeler Maintenant
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="text-blue-400">ASTA</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Atelier d'Architecture et de Synthèse - Créateur d'espaces innovants et durables.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Conception Architecturale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Résidentielle</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Architecture Commerciale</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Modélisation 3D</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-blue-400 transition">Accueil</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="projets.html" class="hover:text-blue-400 transition">Projets</a></li>
+                        <li><a href="apropos.html" class="hover:text-blue-400 transition">À propos</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>123 Avenue de l'Architecture</p>
+                        <p>75001 Paris, France</p>
+                        <p>+33 1 23 45 67 89</p>
+                        <p>contact@asta-architecture.fr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 ASTA - Atelier d'Architecture et de Synthèse. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
